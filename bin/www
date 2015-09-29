@@ -1,0 +1,8 @@
+#!/usr/bin/env node --harmony --harmony-proxies
+
+'use strict';
+
+var app = require('../index.js')();
+var config = require('../config');
+
+app.listen(config.get('port'));
